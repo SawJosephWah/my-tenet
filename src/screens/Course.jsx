@@ -1,6 +1,6 @@
 import React from 'react'
 import CourseCard from '../components/Course/CourseCard'
-import '../assets/css/course.css'
+// import '../assets/css/course.css'
 import { Outlet } from 'react-router-dom'
 
 export default function Course() {
