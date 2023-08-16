@@ -1,0 +1,119 @@
+/* content */
+.content-container {
+    flex-grow: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F6F6;
+}
+
+.content-container .content-body {
+    flex-grow: 1;
+}
+
+/* content header */
+.content-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+.icon-btn {
+    display: inline-block;
+    padding: 10px;
+    background: blue;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* when use 1 column*/
+.content-body .content-body-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content-body .content-body-inner .content-body-inner-title {
+    padding: 15px 40px;
+    color: #000;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.content-body .content-body-inner .content-body-inner-body {
+    flex-grow: 1;
+    padding: 0px 30px 15px 30px;
+    overflow-y: scroll;
+}
+
+/* when use 2 columns (left and right session) */
+.content-container .left-section {
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 40%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.content-container .right-section {
+    width: 60%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
+    .content-container .left-section {
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .content-container .right-section {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+        top: 0;
+        right: 0;
+        margin-right: -100%;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .content-container .right-section.detail-show {
+        margin-right: 0;
+    }
+
+    .content-container {
+        box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-body .content-body-inner {
+        padding-top: 70px;
+    }
+
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .content-container .left-section,
+    .content-container .right-section {
+        padding-top: 70px;
+    }
+
+    .content-body .content-body-inner {
+        padding-top: 70px;
+    }
+
+    .content-body .content-body-inner .content-body-inner-body {
+        flex-grow: 1;
+        padding: 0px 15px;
+        overflow-y: scroll;
+    }
+}

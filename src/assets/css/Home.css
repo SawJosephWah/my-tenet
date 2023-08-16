@@ -1,0 +1,120 @@
+/* home */
+.home {
+    display: flex;
+}
+
+/* .home .card {
+    border: none;
+}
+
+.home .home-card-title-1 {
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 3px;
+    background: #F1F1F1;
+    display: inline-block;
+    padding: 2px 5px;
+}
+
+.home .home-card-title-2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.home .home-card-time-length {
+    color: #636363;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.home .home-card-paragraph {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.home .active-card {
+    background-color: rgb(52, 52, 255);
+    color: #FFF;
+}
+
+.home .active-card .home-card-title-1 {
+    background-color: transparent;
+    color: #FFF;
+}
+
+.home .active-card .home-card-time-length {
+    color: #FFF;
+} */
+
+/* details */
+.detail-title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.file-upload {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0EDED;
+    border-radius: 5px;
+    width: 60%;
+    cursor: pointer;
+    color: #797979;
+    font-size: 12px;
+}
+
+.home .user-card {
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 0;
+    border-radius: 8px;
+    background: #F2F0F0;
+}
+
+.home .user-card .user-card-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home .user-card .user-card-paragraph {
+    color: #383838;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.home .detail-paragraph {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.home .user-card .user-card-icon {
+    padding: 5px;
+    background: rgb(133, 153, 255);
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .home .sort-btn {
+    display: inline-block;
+    background: #D9D9D9;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 10px;
+    font-weight: 500;
+} */
+
+@media screen and (max-width: 767px) {
+    .file-upload {
+        margin: auto;
+    }
+}

@@ -1,0 +1,25 @@
+normal text     - 15px
+normal title    - 18px
+subtitle        - 10px
+
+common css are written in app.css
+
+if use 1 column -----------------------
+<div className="">                             
+    <div className="content-body-inner">
+        <div className="content-body-inner-title">
+        </div>
+        <div className="content-body-inner-body">
+        </div>
+    </div>
+</div>
+
+
+if use 2 columns -------------------------
+<div className="">                       //this must be display flex
+    <div className="left-section">    
+    </div>
+    <div className="right-section">
+        <Outlet></Outlet>
+    </div>
+</div>;

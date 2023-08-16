@@ -1,0 +1,12 @@
+.teacher-home {
+    display: flex;
+}
+
+.tab-btn-active{
+    background-color: #4242ff;
+    color: #fff;
+}
+
+.teacher-home .teaher-home-card{
+    cursor: pointer;
+}
